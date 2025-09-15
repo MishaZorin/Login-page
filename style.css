@@ -84,3 +84,37 @@ button {
 a{
     cursor: pointer;
 }
+.error1 {
+  display: none;
+  font-size: 11px;
+  margin-left: 5px;
+  margin-top: 3px;
+  color: crimson;
+}
+.error2 {
+  display: none;
+  font-size: 11px;
+  margin-left: 5px;
+  margin-top: 3px;
+  color: crimson;
+}
+.error3 {
+  display: none;
+  font-size: 11px;
+  margin-left: 5px;
+  margin-top: 3px;
+  color: crimson;
+}
+@media(max-width: 600px){
+    .right_page{
+        display: none;
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+    }
+    .left_page{
+        margin-top: 50px;
+        margin-right: 0;
+    }
+}
