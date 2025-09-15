@@ -19,16 +19,21 @@
             <form action="">
                 <h1 style="margin-bottom: 20px;font-size: 40px;">Welcome back!</h1>
                 <p style="margin-bottom: 20px;font-size: 25px;">Enter your Credentials to access your account</p>
+                <label for="">Your name</label>
+                <input type="text"   placeholder="Your Name:" id="name">
+                <p class="error1">*Имя должно содержать больше 2 символов</p>
                 <label for="email">Email Adress</label>
-                <input type="email" placeholder="Enter Your E-mail">
+                <input type="email" placeholder="Enter Your E-mail" id="email" >
+                <p class="error2">*Email некорректный</p>
                 <label for="">Password</label>
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" id="password">
+                <p class="error3">*Пароль не содержит !</p>
                 <div class="control">
                     <label for="">Remember for 30 days</label>
                     <input type="checkbox">
                 </div>
 
-                <button>Login</button>
+                <button id="submit">Login</button>
                 <img src="imgs/Frame 61.png" alt="" style="display: block;margin: auto;margin-top: 30px;margin-bottom: 30px;">
                 <div class="display" style="display: flex;">
                     <a href=""><img src="imgs/icons8-google-48.png" alt="">Sign up with Google</a>
@@ -47,7 +52,7 @@
         </div>
     </div>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
