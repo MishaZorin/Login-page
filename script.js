@@ -4,6 +4,7 @@ let emailUser = document.getElementById("email")
 let error1 = document.querySelector(".error1")
 let error2 = document.querySelector(".error2")
 let error3 = document.querySelector(".error3")
+let error4 = document.querySelector(".error4")
 let submit = document.getElementById("submit")
 
 submit.addEventListener('click', function (e) {
@@ -72,6 +73,11 @@ function passwordValid(isValid){
     else{
         error3.style.display = "none"
         passwordUser.style.borderColor = "green"
+    }
+    if(passwordUser.value.length < 5){
+        error4.style.display = "block"
+        passwordUser.style.borderColor = "red"
+        isValid = false
     }
     return isValid
 }
