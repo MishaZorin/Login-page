@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-.page {
-    display: flex;
-    justify-content: flex-end;
-}
 
 @keyframes fadeIn {
     from {
@@ -18,27 +14,24 @@
     }
 }
 
-/* Применяем анимацию к классу .page */
-.page {
-    animation: fadeIn 1.2s ease-in forwards;
-}
+
 
 body {
     font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeIn 1.2s ease-in forwards;
 }
 
-.left_page {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 200px;
-}
 
 label {
     display: block;
     margin-top: 50px;
 }
-
+form{
+    margin-top: 200px;
+    margin-right: 50px;
+}
 input {
     border: 2px solid gray;
     border-radius: 10px;
@@ -127,12 +120,13 @@ a {
     color: crimson;
 }
 
-.right_page img{
+.right_page img {
     height: 100%;
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
-@media(max-width: 600px) {
+
+@media(max-width: 700px) {
     .right_page {
         display: none;
     }
