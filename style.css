@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: flex-end;
     animation: fadeIn 1.2s ease-in forwards;
+    
 }
 
 
@@ -30,7 +31,11 @@ label {
 }
 form{
     margin-top: 200px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    width: calc(100% / 3);
+    /* чтобы padding не расширял тэг */
+    box-sizing: border-box;
+    padding: 30px;
 }
 input {
     border: 2px solid gray;
@@ -38,6 +43,7 @@ input {
     padding: 10px;
     width: 100%;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 
 input::placeholder {
@@ -125,19 +131,16 @@ a {
     width: 100%;
     object-fit: cover;
 }
-
-@media(max-width: 700px) {
+.right_page{
+    width: calc(100% / 3);
+}
+@media(max-width: 600px) {
     .right_page {
         display: none;
     }
-
-    .page {
-        display: flex;
-        justify-content: center;
+    form{
+        width: 100%;
     }
 
-    .left_page {
-        margin-top: 50px;
-        margin-right: 0;
-    }
+    
 }
